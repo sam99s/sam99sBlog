@@ -1,0 +1,68 @@
+* {
+  overflow-x: hidden; }
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #d9d9d9;
+  margin-top: 20em;
+  background: linear-gradient(#B34C00, #A8840C); }
+  body header {
+    top: 0;
+    width: 100%;
+    padding: 0 15%;
+    height: auto;
+    position: fixed;
+    background: #A8840C;
+    justify-content: space-between;
+    font-weight: 500; }
+    body header .logo {
+      width: 100%;
+      text-align: center; }
+      body header .logo img {
+        height: 25vh;
+        width: auto; }
+    body header .menu {
+      width: 100%; }
+      body header .menu ul {
+        text-align: center;
+        font-size: 1.2em;
+        padding-top: 1.8rem;
+        line-height: 1.8rem;
+        margin-bottom: 1rem; }
+  body .container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%; }
+    body .container h1 {
+      text-decoration: underline;
+      text-align: center; }
+    body .container-info p {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
+      font-weight: 400;
+      font-size: 1.2em; }
+    body .container-info img {
+      width: 100vw;
+      height: auto;
+      object-fit: cover; }
+  body h2 {
+    text-align: center; }
+  body ol li h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #8602B3; }
+  body ol li img {
+    width: 100%;
+    height: auto; }
+  body ol li p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 1rem; }

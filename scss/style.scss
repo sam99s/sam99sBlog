@@ -1,0 +1,97 @@
+*{
+    overflow-x: hidden;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+$colorPrincipal: #990000;
+$colorSecundario: #B34C00;
+$colorAlternativo: #A8840C;
+$colorResaltar: #030CA8;
+$colorEsporadico: #8602B3;
+$paddingGral: 0 15%;
+$marginGral: 1rem;
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #d9d9d9;
+    margin-top: 20em;
+    background: linear-gradient($colorSecundario, $colorAlternativo,);
+    header{
+        top: 0;
+        width: 100%;
+        padding: $paddingGral;
+        height: auto;
+        position: fixed;
+        background: $colorAlternativo;
+        justify-content: space-between;
+        font-weight: 500;
+        .logo{
+            width: 100%;
+            text-align: center;
+            img{
+                height: 25vh;
+                width: auto;
+            }
+        }
+        .menu{
+            width: 100%;
+            & ul{
+                text-align: center;
+                font-size: 1.2em;
+                padding-top: 1.8rem;
+                line-height: 1.8rem;
+                margin-bottom: $marginGral;
+            }
+        }
+    }
+
+    .container{
+        margin-top: $marginGral;
+        margin-bottom: $marginGral;
+        width: 100%;
+        h1{
+            text-decoration: underline;
+            text-align: center;
+        }
+        &-info{
+            p{
+                text-align: center;
+                margin-top: $marginGral;
+                margin-bottom: 1.2rem;
+                font-weight: 400;
+                font-size: 1.2em;
+            }
+            img{
+                width: 100vw;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    ol li{
+        h3{
+            margin-top: $marginGral;
+            margin-bottom: $marginGral;
+            color: $colorEsporadico;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-top: $marginGral;
+        }
+    }
+}
