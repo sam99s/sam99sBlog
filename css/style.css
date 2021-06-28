@@ -52,7 +52,7 @@ body {
       margin-bottom: 1.2rem;
       font-weight: 400;
       font-size: 1.2em; }
-    body .container-info img {
+    body .container-info .hero img {
       width: 100vw;
       height: auto;
       object-fit: cover; }
@@ -141,3 +141,72 @@ body {
       display: flex;
       justify-content: space-around;
       margin-top: 1rem; }
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 10em; }
+    body header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0; }
+      body header .logo {
+        width: 40%; }
+      body header .menu {
+        width: 60%; }
+        body header .menu ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-around; }
+    body .container-info {
+      display: flex;
+      margin-top: 1rem; }
+      body .container-info p {
+        width: 60%;
+        font-size: 1.4em; }
+      body .container-info .hero {
+        width: 40%;
+        text-align: center; }
+        body .container-info .hero img {
+          width: 80%;
+          border-radius: 130px;
+          box-shadow: 26px 0px 20px -5px;
+          color: #A8840C; }
+    body #estudios .container-organizado {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+      body #estudios .container-organizado_imagen {
+        width: 40%; }
+      body #estudios .container-organizado_p1 {
+        width: 60%; }
+    body hr {
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+    body #experiencia {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      body #experiencia h2 {
+        width: 100%; }
+      body #experiencia .proyecto {
+        margin: 1rem;
+        padding: 0;
+        width: 40%; }
+    body .preFooter {
+      margin-bottom: 0; }
+    body footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100vw; }
+      body footer .contacto {
+        width: 65%;
+        display: flex;
+        justify-content: space-between; }
+        body footer .contacto-imagen {
+          height: 100px;
+          width: auto; }
+        body footer .contacto-email {
+          margin-top: 1rem; }
+      body footer .social {
+        width: 35%;
+        padding-left: 1rem; } }

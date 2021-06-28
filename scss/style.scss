@@ -72,7 +72,7 @@ body{
                 font-weight: 400;
                 font-size: 1.2em;
             }
-            img{
+            .hero img{
                 width: 100vw;
                 height: auto;
                 object-fit: cover;
@@ -205,6 +205,118 @@ body{
             display: flex;
             justify-content: space-around;
             margin-top: $marginGral;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body{
+        
+        margin-top: 10em;
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            .logo{
+                width: 40%;
+            }
+
+            .menu{
+                width: 60%;
+                & ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            
+        }
+
+        .container-info{
+            display: flex;
+            margin-top: $marginGral;
+            p{
+                width: 60%;
+                font-size: 1.4em;
+            }
+            .hero{
+                width: 40%;
+                text-align: center;
+                img{
+                    width: 80%;
+                    border-radius: 130px;
+                    box-shadow: 26px 0px 20px -5px;
+                    color: $colorAlternativo;
+                }
+            }
+
+        }
+        #estudios{
+            .container{
+                &-organizado{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    &_imagen{
+                        width: 40%;
+                    }
+                    &_p1{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    
+        hr{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    
+    
+        #experiencia{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            h2{
+                width: 100%;
+            }
+            
+            .proyecto{
+                margin: $marginGral;
+                padding: 0;
+                width: 40%;
+            }
+        }
+
+        .preFooter{
+            margin-bottom: 0;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            .contacto{
+                width: 65%;
+                display: flex;
+                justify-content: space-between;
+                &-imagen{
+                    height: 100px;
+                    width: auto;
+                }
+                &-email{
+                    margin-top: $marginGral;
+                }
+            }
+
+            .social{
+                width: 35%;
+                padding-left: 1rem;
+            }
         }
     }
 }
