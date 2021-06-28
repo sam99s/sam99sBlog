@@ -23,6 +23,7 @@ body{
     margin-top: 20em;
     background: linear-gradient($colorSecundario, $colorAlternativo,);
     header{
+        z-index: 1;
         top: 0;
         width: 100%;
         padding: $paddingGral;
@@ -47,6 +48,10 @@ body{
                 padding-top: 1.8rem;
                 line-height: 1.8rem;
                 margin-bottom: $marginGral;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
@@ -91,6 +96,114 @@ body{
             text-align: center;
             font-size: 1.2em;
             font-weight: 400;
+            margin-top: $marginGral;
+        }
+    }
+
+    article{
+        margin-top: $marginGral;
+        margin-bottom: $marginGral;
+        padding: $paddingGral;
+        background: linear-gradient(90deg,$colorPrincipal,$colorSecundario 50%);
+        h2{
+            text-align: center;
+            p{
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+        }
+    }
+
+    #experiencia{
+        display: flex;
+        flex-wrap: wrap;
+        .proyecto{
+            margin-top: $marginGral;
+            margin-bottom: $marginGral;
+            padding: $paddingGral;
+            border-radius: 10px;
+            overflow: hidden;
+            background: $colorPrincipal;
+            width: 100%;
+
+            img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            &-detalles{
+                margin: 20px;
+                margin-top: -40px;
+                background-color: $colorSecundario;
+                position: relative;
+                padding: 20px;
+                text-align: center;
+
+                .ir{
+                    position: relative;
+                    top: 0.5em;
+                    border: 1px solid $colorResaltar;
+                    padding: 5px 20px;
+                    text-decoration: none;
+                    color: $colorResaltar;
+                    border-radius: 5px;
+                }
+
+                .ir:hover{
+                    background: $colorEsporadico;
+                    color: white;
+                }
+                
+                .crautomotores{
+                    color: white;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+
+    .preFooter{
+        height: 5px;
+        background: white;
+    }
+
+    footer{
+        width: 100%;
+        z-index: 1;
+        .contacto{
+            &-imagen{
+                width: 100%;
+                height: 300px;
+                text-align: center;
+                img{
+                    height: 90%;
+                }
+            }
+
+            &-email{
+
+                h4{
+                    text-align: center;
+                    font-weight: 900;
+                }
+                p{
+                    text-align: center;
+                    em{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .social{
+            display: flex;
+            justify-content: space-around;
             margin-top: $marginGral;
         }
     }
