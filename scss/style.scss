@@ -7,6 +7,7 @@
     margin: 0;
     outline: 0;
     box-sizing: border-box;
+    max-width: 1600px;
 }
 
 $colorPrincipal: #990000;
@@ -16,6 +17,7 @@ $colorResaltar: #030CA8;
 $colorEsporadico: #8602B3;
 $paddingGral: 0 15%;
 $marginGral: 1rem;
+
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -49,6 +51,9 @@ body{
                 line-height: 1.8rem;
                 margin-bottom: $marginGral;
                 a{
+                    li{
+                        overflow-y: hidden;
+                    }
                     text-decoration: none;
                     color: white;
                 }
@@ -173,10 +178,11 @@ body{
         background: white;
     }
 
-    footer{
+    #contact{
         width: 100%;
         z-index: 1;
         .contacto{
+            overflow-y: hidden;
             &-imagen{
                 width: 100%;
                 height: 300px;
@@ -296,7 +302,7 @@ body{
             margin-bottom: 0;
         }
 
-        footer{
+        #contact{
             display: flex;
             justify-content: space-between;
             width: 100vw;
@@ -320,3 +326,109 @@ body{
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    body{
+        margin-top: 17em;
+
+        header{
+            justify-content: space-evenly;
+            align-items: center;
+            .logo{
+                width: 35%;
+            }
+            .menu{
+                ul{
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        .container-info{
+            text-align: center;
+            p{
+                font-size: 1.8em;
+            }
+        }
+
+        #estudios{
+            .container-organizado{
+                justify-content: space-around;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                &_imagen{
+                    width: 50%;
+                    margin-bottom: $marginGral;
+                }
+                p{
+                    font-size: 1.65em;
+                }
+                &_p1{
+                    width: 45%;
+                    margin-bottom: $marginGral;
+                }
+            }
+
+        }
+
+        #sobreMi{
+            
+            h2{
+                margin-bottom: $marginGral;
+            }
+
+            p{
+                font-size: 1.43em;
+                line-height: 1.5em;
+                font-weight: 500;
+            }
+        }
+
+        #experiencia{
+            .proyecto{
+                width: 44%;
+                &-detalles{
+                    h3{
+                        margin-bottom: $marginGral;
+                    }
+                    p{
+                        font-size: 1.4em;
+                        margin-bottom: 1.5em;
+                    }
+                }
+            }
+
+        }
+
+        #contact{
+            .contacto{
+                &-imagen{
+                    height: 200px;
+                }
+                &-email{
+                    font-size: 1.3em;
+                    height: 100%;
+                    margin-top: 3.5rem;
+                }
+            }
+
+            .social{
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+
+    }
+}
+
+/* @media screen and (min-width: 1400px) {
+    - Respetando el max-width de 1400px quiero que quede centrado todo el body en el viewport y que crezca los costados a la par...
+    html{
+        margin: 0;
+        width: 100%;
+        flex: 1;
+        body{
+            font-size: 1.4em;
+        }
+    }
+} */
