@@ -6,7 +6,7 @@
   margin: 0;
   outline: 0;
   box-sizing: border-box;
-  max-width: 1600px; }
+  max-width: 1400px; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -265,14 +265,13 @@ body {
       align-items: center;
       justify-content: space-evenly; } }
 
-/* @media screen and (min-width: 1400px) {
-    - Respetando el max-width de 1400px quiero que quede centrado todo el body en el viewport y que crezca los costados a la par...
-    html{
-        margin: 0;
-        width: 100%;
-        flex: 1;
-        body{
-            font-size: 1.4em;
-        }
-    }
-} */
+@media screen and (min-width: 1400px) {
+  html {
+    margin: 0;
+    max-width: 100vw;
+    width: 100%;
+    flex: 1; }
+    html body {
+      max-width: 1400px;
+      font-size: 1.4em;
+      margin: 20rem auto 0; } }
